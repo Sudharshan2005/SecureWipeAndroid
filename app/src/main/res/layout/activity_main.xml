@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="#121212">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔒 Secure Data Wiper"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Status Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:cardBackgroundColor="#1E1E1E"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🟢 Ready to wipe"
+                android:textSize="18sp"
+                android:textColor="#4CAF50"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvFolderInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target: /WipeTest/"
+                android:textSize="14sp"
+                android:textColor="#AAAAAA"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Wipe Button -->
+    <Button
+        android:id="@+id/btnWipe"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="🚀 START WIPE"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF3B30"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        style="@style/Widget.Material3.Button"/>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:progressTint="#FF3B30"/>
+
+    <!-- Log Output -->
+    <TextView
+        android:id="@+id/tvLog"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="#1E1E1E"
+        android:padding="10dp"
+        android:textColor="#CCCCCC"
+        android:textSize="12sp"
+        android:fontFamily="monospace"
+        android:scrollbars="vertical"/>
+    
+    <!-- Certificate Info -->
+    <TextView
+        android:id="@+id/tvCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Certificate: Not generated"
+        android:textSize="12sp"
+        android:textColor="#888888"/>
+
+</LinearLayout>
