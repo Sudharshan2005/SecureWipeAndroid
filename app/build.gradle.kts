@@ -48,6 +48,10 @@ dependencies {
     // For encryption/secure deletion
     implementation("androidx.security:security-crypto:1.1.0-alpha06")
 
-    // For certificates
-    implementation("org.bouncycastle:bcpkix-jdk18on:1.76")
+    // For PDF generation
+    implementation("com.itextpdf:itext7-core:7.2.5")
+//    implementation("com.itextpdf:bouncycastle-adapter:7.2.5")
+
+    // For file operations in Downloads folder
+    implementation("androidx.documentfile:documentfile:1.0.1")
 }
