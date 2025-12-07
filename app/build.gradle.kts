@@ -42,16 +42,9 @@ dependencies {
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    // For file operations
-    implementation("commons-io:commons-io:2.15.1")
+    // For using registerForActivityResult
+    implementation("androidx.activity:activity-ktx:1.8.2")
 
-    // For encryption/secure deletion
-    implementation("androidx.security:security-crypto:1.1.0-alpha06")
-
-    // For PDF generation
-    implementation("com.itextpdf:itext7-core:7.2.5")
-//    implementation("com.itextpdf:bouncycastle-adapter:7.2.5")
-
-    // For file operations in Downloads folder
+    // For file operations and SAF
     implementation("androidx.documentfile:documentfile:1.0.1")
 }
